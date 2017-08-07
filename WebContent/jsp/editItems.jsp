@@ -22,7 +22,7 @@
 <tr>
 <td>商品简介</td><td><input type="submit"/> </td>
 </tr>
-
+123
 </table>
 </form>
 </body>
