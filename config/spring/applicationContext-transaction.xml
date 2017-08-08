@@ -36,7 +36,8 @@
 	
 	<!-- 事务切面和通知器 -->
 	<aop:config>
-		<aop:pointcut id="txPointcut" expression="execution(* *..service.*Service.*(..))" />
+<!-- 	expression的配置很重要！！！！！！！！！！！！！，如果出错就不能进行事务回滚 -->
+		<aop:pointcut id="txPointcut" expression="execution(* *..service.impl.*Service.*(..))" />
 		<aop:advisor pointcut-ref="txPointcut" advice-ref="txAdvice"/>
 	</aop:config>
 </beans>

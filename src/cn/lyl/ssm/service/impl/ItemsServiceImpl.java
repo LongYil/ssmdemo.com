@@ -19,7 +19,7 @@ import cn.lyl.ssm.po.ItemsQueryVo;
  *		上午11:14:02
  */
 
-public class ItemsServicesImpl implements ItemsService{
+public class ItemsServiceImpl implements ItemsService{
 
 	@Autowired
 	private ItemsMapperCustom itemsMapperCustom;
@@ -50,12 +50,15 @@ public class ItemsServicesImpl implements ItemsService{
 		//校验id是否为空，如果为空，抛出异常
 		//更新商品信息使用updateByPrimaryKeyWithBLOBS根据id更新items表中的所有字段，包括大文本类型
 		//要求必须传入id
-		itemsCustom.setId(id);
-		itemsMapper.updateByPrimaryKeyWithBLOBs(itemsCustom);
+		itemsCustom.setId(20);
+		itemsMapper.insert(itemsCustom);
+		int a = 10/0;
+		itemsMapper.deleteByPrimaryKey(20);
 	}
 
 	@Override
 	public void delete(Integer id) throws Exception {
 		itemsMapper.deleteByPrimaryKey(id);
 	}
+	
 }

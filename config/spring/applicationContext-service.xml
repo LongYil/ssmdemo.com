@@ -17,7 +17,7 @@
             http://www.springframework.org/schema/aop  
             http://www.springframework.org/schema/aop/spring-aop.xsd "> 
 <!--     商品管理的service -->
-    <bean id="itemsService" class="cn.lyl.ssm.service.impl.ItemsServicesImpl"/>
+    <bean id="itemsService" class="cn.lyl.ssm.service.impl.ItemsServiceImpl"/>
 
 
 </beans>

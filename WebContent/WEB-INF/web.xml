@@ -4,7 +4,8 @@
   <context-param>
     <param-name>contextConfigLocation</param-name>
     <param-value>/WEB-INF/classes/spring/applicationContext-dao.xml,
-    /WEB-INF/classes/spring/applicationContext-service.xml</param-value>
+    /WEB-INF/classes/spring/applicationContext-service.xml,
+    /WEB-INF/classes/spring/applicationContext-transaction.xml</param-value>
   </context-param>
   
   
